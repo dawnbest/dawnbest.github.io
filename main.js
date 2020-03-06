@@ -1,26 +1,21 @@
-//GSAP stuff
+//GSAP Stuff
 
 gsap.to(".monster", {duration: 2, xPercent: -25, ease: 'Elastic.easeInOut'});
 gsap.from(".monban", {duration: 2, x:-100, ease: 'Bounce.out'});
 gsap.from("main", {opacity: 0, duration: 1, yPercent:-50});
 
-//TweenLite.set("div.green", {perspective:1000});
-//TweenLite.set("div.green", {transformStyle:"preserve-3d", scaleX:0.8});
-//TweenLite.set("div.green", {rotationY:-180});
-//TweenLite.set("div.green", {backfaceVisibility:"hidden"});
+//JQuery Stuff
 
-var tl = new TimelineMax({
-  paused:true
-});
+var current_h = null;
+var current_w = null;
 
-tl.to("div.green", 0.6, {
-  scaleX:1, 
-  transformOrigin:"50% 50%", 
-  ease:Cubic.easeOut
-});
-
-$(document).on("mouseenter", "div.green", function() {
-    tl.play();
-}).on("mouseleave", "div.green", function(){
-    tl.reverse();
-});
+$('.resize').hover(
+    function(){
+        current_h = $(this, 'img')[0].height;
+        current_w = $(this, 'img')[0].width;
+        $(this).animate({width: (current_w * 3), height: (current_h * 3)}, 300);
+    },
+    function(){
+        $(this).animate({width: current_w + 'px', height: current_h + 'px'}, 300);
+    }
+);
