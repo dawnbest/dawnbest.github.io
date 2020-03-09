@@ -23,7 +23,7 @@ nav {
   max-width: 100%;
 }
 
-div.title {
+.title {
   background: #C70039;
   color: white;
   min-width: 500px;
@@ -33,48 +33,56 @@ div.title {
   margin: auto;
 }
 
-div.intro {
+.intro {
   min-width: 300px;
   max-width: 500px;
   font-family: "Verdana", sans-serif;
   margin: auto;
 }
 
-div.goleft {
-  width: 300px;
-  height: 300px;
-  background-color: black;
-  margin-left: auto;
-  margin-right:auto;
+.container {
+  max-width: 1000px;
+  padding: 10px;
+  font-family: "Trade Winds", "Verdana", sans-serif;
+  alignment: center;
+  margin: auto;
 }
 
-p.boldintro {
+.boldintro {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
   
-img.monster {
+.monster {
   position: absolute;
   top: 0px;
   z-index: 99;
   overflow: hidden;
 }
 
-img.monban {
+.monban {
   position: absolute;
   top: 0px;
   z-index: 98;
 }
 
-img.port {
-  position:relative;
-  border-radius:6px;
-  margin-top:4px;
-  display:inline-block;
-  line-height:50px;
-  text-align:center;
-  color:#333;
-  background-color:#6fb936;
+.awayban {
+  position: absolute;
+  top: 0px;
+  z-index: 98;
+}
+
+.img-zoom {
+  height: 50%;
+  width: 50%; 
+}
+
+.img-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.5);
 }
 
 aside {
@@ -88,4 +96,85 @@ button {
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
+  transition-duration: 0.4s;
 }
+
+.button:hover {
+  background: #D63362;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(80px, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  width: 64%;
+  alignment: center;
+  text-align:center;
+}
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+  width: 64%;
+  alignment: center;
+  text-align:center;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+  width: 64%;
+  alignment: center;
+  text-align:center;
+}
+.four {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+
+/* Gauge Meter styles -- do not edit these */
+
+  .GaugeMeter{
+    Position:        Relative;
+    Text-Align:      Center;
+    Overflow:        Hidden;
+    Cursor:          Default;
+  }
+
+  .GaugeMeter SPAN,
+  .GaugeMeter B{
+    Margin:          0 23%;
+    Width:           54%;
+    Position:        Absolute;
+    Text-align:      Center;
+    Display:         Inline-Block;
+    Color:           RGBa(0,0,0,.8);
+    Font-Weight:     100;
+    Font-Family:     "Open Sans", Arial;
+    Overflow:        Hidden;
+    White-Space:     NoWrap;
+    Text-Overflow:   Ellipsis;
+  }
+  .GaugeMeter[data-style="Semi"] B{
+    Margin:          0 10%;
+    Width:           80%;
+  }
+
+  .GaugeMeter S,
+  .GaugeMeter U{
+    Text-Decoration: None;
+    Font-Size:       .5em;
+    Opacity:         .5;
+  }
+
+  .GaugeMeter B{
+    Color:           Black;
+    Font-Weight:     300;
+    Font-Size:       .5em;
+    Opacity:         .8;
+  }
