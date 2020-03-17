@@ -1,5 +1,9 @@
+body {
+  font-family: "Varela Round", "Verdana", sans-serif;
+}
+
 h1 {
-  font-family: "Trade Winds", "Verdana", sans-serif;
+  font-family: "Oxanium", "Verdana", sans-serif;
   font-size: 2.5em;
 }
 
@@ -14,7 +18,7 @@ a:hover, a:active {
 }
 
 nav {
-  font-family: "Trade Winds", "Verdana", sans-serif;
+  font-family: "Oxanium", "Verdana", sans-serif;
   font-size: 0.9em;
   padding: 10px;
   space-around: 10px;
@@ -36,14 +40,14 @@ nav {
 .intro {
   min-width: 300px;
   max-width: 500px;
-  font-family: "Verdana", sans-serif;
+  font-family: "Varela Round", "Verdana", sans-serif;
   margin: auto;
 }
 
 .container {
   max-width: 1000px;
   padding: 10px;
-  font-family: "Trade Winds", "Verdana", sans-serif;
+  font-family: "Oxanium", "Verdana", sans-serif;
   alignment: center;
   margin: auto;
 }
@@ -51,6 +55,13 @@ nav {
 .boldintro {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.threeve {
+  min-width: 300px;
+  max-width: 1000px;
+  font-family: "Varela Round", "Verdana", sans-serif;
+  margin: auto;
 }
   
 .monster {
@@ -66,7 +77,7 @@ nav {
   z-index: 98;
 }
 
-.awayban {
+.monban2 {
   position: absolute;
   top: 0px;
   z-index: 98;
@@ -93,6 +104,8 @@ button {
   background: #C70039;
   border: none;
   color: white;
+  font-family: "Oxanium", "Verdana", sans-serif;
+  font-weight: bold;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
@@ -104,6 +117,7 @@ button {
   color: white;
 }
 
+/* Gauge Meter columns -- do not edit these */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -134,6 +148,35 @@ button {
 .four {
   grid-column: 1/4;
   grid-row: 2;
+}
+
+/* Three-up content columns -- do not edit these */
+.threeup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(auto, auto);
+}
+.tone {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  alignment: center;
+  text-align:center;
+}
+.ttwo { 
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  alignment: center;
+  text-align:center;
+}
+.tthree {
+  grid-column: 3;
+  grid-row: 1;
+  width: 100%;
+  alignment: center;
+  text-align:center;
 }
 
 

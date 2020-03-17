@@ -18,27 +18,55 @@
     <a href="about.html">About + Contact</a>
   </nav>
   <div class="title">
-    <h1 class="welcome">Welcome to Monster</h1>
+    <h1 class="welcome">Hi! I'm Dawn!</h1>
   </div>
   <div class="intro">
-    <p class="boldintro">Monster is Your Homeboy!</p>
-    <p>He is the best friend you can ever want! If you would like to have Monster as your BFF, we invite you to click the button, below. Else, good luck with your sad, lonely existence, fella!</p>
-    <p class="butt"><button type="button">I am Ready to Monster!</button></p>
-    <!-- Hover BIIIKES -->
-    <h1>Hover over mouse</h1>
-    <div class="green"></div>
+    <p>I'm a front-end web developer/designer who also knows a few tricks when it comes to working server-side and managing networks! I like stuff that's cool. I don't like stuff that's lame. I have over ten years experience in web development and would love to make something really <strong>zazzy</strong> for you!</p>
+
+<!-- My Faves -->
+  <div class="title">
+    <h1 class="welcome">Tools of the Trade</h1>
+  </div>
+  <div class="threeup">
+    <div class="tone"><strong>Design</strong><br><br>Layouts, Logos, Animations, UX, UI, Modeling, Prototyping<br>---<br>Photoshop<br>Premiere<br>ZBrush<br>Illustrator<br>SketchUp</div>
+    <div class="ttwo"><strong>Web Development</strong><br><br>Front-End, Back-End, Network<br>---<br>HTML5<br>CSS<br>JavaScript<br>GSAP<br>JQuery<br>PHP<br>MySQL<br>Terminal</div>
+    <div class="tthree"><strong>Code</strong><br><br>Apps, Software, Games, UX, UI, Troubleshooting, Mentoring<br>---<br>Github<br>Gitlab<br>Codepen<br>Atom<br>Notepad++</div>
+  </div>
+
+<!-- Contact -->
+<div class="title">
+    <h1 class="welcome">Contact Me</h1>
+  </div>
+  <div class="intro">
+    <p>Get in touch with me via email:</p>
+    <p><strong><a href=mailto:dawnbest@outlook.com>dawnbest@outlook.com</a></strong>
+   <p class="boldintro">I Can Do Other Stuff, Too!</p>
+    <p>I am also a world-class illustrator, design consultant, and prototyper. Peruse a small selection of my other works, below. </p>
+    <a  href="https://github.com/dawnbest"><img src="img/Github-icon.png"></a>&nbsp;<a  href="https://evolvgames.itch.io/">&nbsp;<img src="img/itch-icon.png"></a>&nbsp;<a  href="https://www.linkedin.com/in/dawnbest/"><img src="img/Linkedin-icon.png"></a>&nbsp;<a  href="http://www.twitter.com/dbeshleman"><img src="img/Twitter-icon.png"></a></div></p>
   </div>
   </main>
 
 <!-- Monster head and banner -->
   <aside>
     <img class="monster" src="img/monster.png" alt="Monster Head">
-    <img class="monban" src="img/monban.jpg" alt="Monster Banner">
+    <div class="monban2">
+      <!-- Hover over portfolio -->
+      <div class="img-zoom"><img src="img/scn.png"></div>
+      <div class="img-zoom"><img src="img/scn.png"></div>
+      <div class="img-zoom"><img src="img/scn.png"></div>
+    </div>
   </aside>
   <!-- Polyfill -->
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
   <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+  <!-- Gauge Meters -->
+<script src="./GaugeMeter.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
+</script>
   <!-- Scripts GSAP and the page in general will use -->
 <script src="https://unpkg.com/@barba/core"></script>
 <script src="main.js"></script>
