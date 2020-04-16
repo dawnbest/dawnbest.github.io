@@ -80,7 +80,7 @@ nav {
 }
 
 button {
-  background: #C70039;
+  background: rgb(41, 130, 189);
   border: none;
   color: white;
   font-family: "Oxanium", "Verdana", sans-serif;
@@ -105,19 +105,18 @@ button {
 }
 .one {
   grid-column: 1;
-  grid-row: 1;
-  width: 64%;
+  grid-row: 1/2;
   alignment: center;
   text-align:center;
 }
-.two { 
+.two {
   grid-column: 2;
   grid-row: 1;
   width: 64%;
   alignment: center;
   text-align:center;
 }
-.three {
+.three { 
   grid-column: 3;
   grid-row: 1;
   width: 64%;
@@ -125,6 +124,13 @@ button {
   text-align:center;
 }
 .four {
+  grid-column: 4;
+  grid-row: 1;
+  width: 64%;
+  alignment: center;
+  text-align:center;
+}
+.five {
   grid-column: 1/4;
   grid-row: 2;
 }
@@ -175,7 +181,7 @@ button {
     Position:        Absolute;
     Text-align:      Center;
     Display:         Inline-Block;
-    Color:           RGBa(0,0,0,.8);
+    Color:           White;
     Font-Weight:     100;
     Font-Family:     "Open Sans", Arial;
     Overflow:        Hidden;
