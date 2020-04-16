@@ -1,5 +1,7 @@
 body {
   font-family: "Varela Round", "Verdana", sans-serif;
+  background-color: darkslategray;
+  color: white;
 }
 
 h1 {
@@ -9,12 +11,12 @@ h1 {
 
 a:link, a:visited {
   text-decoration: none;
-  color: black;
+  color: rgb(191, 248, 255);
 }
 
 a:hover, a:active {
   text-decoration: none;
-  color: red;
+  color: rgb(41, 130, 189);
 }
 
 nav {
@@ -28,7 +30,7 @@ nav {
 }
 
 .title {
-  background: #C70039;
+  background: rgb(0, 182, 142);
   color: white;
   min-width: 500px;
   width: 100%;
@@ -63,25 +65,6 @@ nav {
   font-family: "Varela Round", "Verdana", sans-serif;
   margin: auto;
 }
-  
-.monster {
-  position: absolute;
-  top: 0px;
-  z-index: 99;
-  overflow: hidden;
-}
-
-.monban {
-  position: absolute;
-  top: 0px;
-  z-index: 98;
-}
-
-.monban2 {
-  position: absolute;
-  top: 0px;
-  z-index: 98;
-}
 
 .img-zoom {
   height: 50%;
@@ -94,10 +77,6 @@ nav {
 
 .img-zoom:hover img {
   transform: scale(1.5);
-}
-
-aside {
-  min-width: 50px;
 }
 
 button {
