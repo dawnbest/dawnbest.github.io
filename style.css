@@ -64,6 +64,13 @@ nav {
   margin-left: 700px;
 }
 
+.mainintro {
+  min-width: 300px;
+  max-width: 500px;
+  font-family: "Varela Round", "Verdana", sans-serif;
+  margin: auto;
+}
+
 .container {
   max-width: 1000px;
   padding: 10px;
