@@ -7,6 +7,29 @@
   <link href="https://fonts.googleapis.com/css?family=Oxanium|Varela+Round&display=swap" rel="stylesheet">
 <!-- JQuery script MUST be in head DO NOT MOVE -->
   <script src="jquery-3.4.1.min.js"></script>
+<!-- The Mouse Hover Style for This Page Only -->
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
 </head>
 
 <!-- Main Content -->
@@ -14,31 +37,131 @@
   <main>
   <nav>
     <a href="home.html">Home</a>&nbsp;|&nbsp;
-    <a href="portfolio.html">Portfolio</a>&nbsp;|&nbsp;
-    <a href="about.html">About + Contact</a>
+    <a href="portfolio.html">Portfolio</a>
   </nav>
   <div class="title">
     <h1 class="welcome">PORTFOLIO</h1>
   </div>
-  <div class="intro">
-    <p class="boldintro">I Made This!</p>
-    <p>Peruse a small selection of my projects, below. If you're so inclined, you might also like the following:</p>
-  </div>
-    <div class="container">
-      <!-- Hover over portfolio -->
-      <h1>Hover over mouse</h1>
-      <div class="img-zoom"><img src="img/scn.png"></div>
-      <div class="img-zoom"><img src="img/scn.png"></div>
-      <div class="img-zoom"><img src="img/scn.png"></div>
-      <div class="img-zoom"><img src="img/scn.png"></div>
-    </div>
+
+<!-- Harmonic Portfolio -->
+    <div class="gallcontainer">
+      <p class="boldintro">Harmonic Odyssey</p>
+    <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Project Overview</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Website and Devlog</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+</div>
+
+<!-- Age of the Four Clans Portfolio -->
+
+    <div class="gallcontainer">  
+    <p class="boldintro">Age of the Four Clans</p>
+    <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Project Overview</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Website and Devlog</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+</div>
+
+<!-- Other Portfolio -->
+    <div class="gallcontainer">
+      <p class="boldintro">Other Projects</p>
+    <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Phlebo</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Github Repository</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">ArtStation Portfolio</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img/blank.png" alt="Cinque Terre" width="237" height="158">
+  </a>
+  <div class="desc">Concept Art</div>
+</div>
+</div>
   </main>
 
-<!-- Monster head and banner -->
-  <aside>
-    <img class="monster" src="img/monster.png" alt="Monster Head">
-    <img class="awayban" src="img/monban.jpg" alt="Monster Banner">
-  </aside>
   <!-- Polyfill -->
 <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
   <!-- GSAP -->

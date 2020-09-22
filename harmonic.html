@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>HARMONIC ODYSSEY | Dawn Best | Design + Development</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxanium|Varela+Round&display=swap" rel="stylesheet">
+<!-- JQuery script MUST be in head DO NOT MOVE -->
+  <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<!-- Main Content -->
+<body>
+<main>
+  <div class="intro">
+    <!-- Gauges -->
+    <h1></h1>
+  <div class="wrapper">
+    <div class="one"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="80"></div><p>JavaScript</p></div>
+    <div class="two"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="40"></div><p>MySQL</p></div>
+    <div class="three"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="20"></div><p>HTML</p></div>
+    <div class="five"><p>Phlebo is a test-indexing application developed for hospital laboratory facilities. It is a search engine for specimen collection that can be tailored to the exact specifications of the laboratory.</p>
+<p>Phlebo is PHP-driven and runs on a MySQL database. It can be modified to feature a login function and offline mode.</p>
+</div>
+    </div>
+  </div>
+  </main>
+
+  <div class="container">
+    <h1>Objectives</h1>
+    <p><b>Problem:</b> Hospital staff within and outside the laboratory are often called on to draw blood and collect other specimens for laboratory testing. In several facilities within the hospital, specimen collection requirement materials were out-of-date and/or static paper documents. Collecting a specimen correctly differs from test to test and errors can cause delays in diagnosis and patient care. Due to the speed in which advances in testing media and best-practices are developed, the documentation is in constant need of updating. Amending specimen requirement documents and distributing them via printout is time-consuming, costly, and inefficient.</p>
+    <p><b>Solution:</b> Phlebo takes the guesswork out of specimen collection by allowing hospital staff to quickly look-up a test by name and receive a consolidated set of collection instructions. The central MySQL database is responsive and easy to update, allowing changes to be made instantly and in real-time. Phlebo can be accessed via a website or in an offline mode, on both desktop and mobile devices. </p>
+<p><button type="button" onclick="window.location.href = 'http://sylvanna.net/phlebo';">See this App in Action!</button></p>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>&nbsp;|&nbsp;
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+
+<aside>
+    <div class="porttitle">Phlebo</div>
+    <img class="portimg" src="img/phlebodemo.png" alt="Application Snapshot">
+  </aside>
+
+  <!-- Polyfill -->
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+  <!-- Scripts GSAP and the page in general will use -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="main.js"></script>
+<script src="./GaugeMeter.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
+</script>
+</body>
+</html>

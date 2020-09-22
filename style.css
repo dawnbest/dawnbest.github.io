@@ -79,6 +79,14 @@ nav {
   margin: auto;
 }
 
+.gallcontainer {
+  max-width: 1000px;
+  padding: 10px 100px 200px 100px;
+  font-family: "Oxanium", "Verdana", sans-serif;
+  alignment: center;
+  margin: auto;
+}
+
 .boldintro {
   font-weight: bold;
   font-size: 1.2em;
@@ -89,19 +97,6 @@ nav {
   max-width: 1000px;
   font-family: "Varela Round", "Verdana", sans-serif;
   margin: auto;
-}
-
-.img-zoom {
-  height: 50%;
-  width: 50%; 
-}
-
-.img-zoom img {
-  transition: transform .5s ease;
-}
-
-.img-zoom:hover img {
-  transform: scale(1.5);
 }
 
 img.portimg {
