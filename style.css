@@ -1,6 +1,6 @@
 body {
   font-family: "Varela Round", "Verdana", sans-serif;
-  background-image: url("img/edenBG.jpg");
+  background-image: url("img/bgdbest.png");
   background-color: #2F4545;
   background-position: left;
   background-repeat: no-repeat;
@@ -109,6 +109,14 @@ img.portimg {
   top: 20px;
   left: 180px;
   z-index: 0;
+  overflow: hidden;
+}
+
+img.skullygirl {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 2;
   overflow: hidden;
 }
 
