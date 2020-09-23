@@ -110,7 +110,7 @@ img.portimg {
 img.skullygirl {
   position: absolute;
   top: 20px;
-  left: 200px;
+  left: 100px;
   z-index: 2;
   overflow: hidden;
 }
@@ -242,6 +242,17 @@ button {
     Font-Size:       .5em;
     Opacity:         .8;
   }
+
+@media only screen and (max-width: 1300px) {
+img.skullygirl {
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  left: 5px;
+  z-index: 2;
+  overflow: hidden;
+}
+}
 
 @media only screen and (max-width: 800px) {
 .container {
