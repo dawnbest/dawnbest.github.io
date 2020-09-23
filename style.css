@@ -36,17 +36,6 @@ nav {
   max-width: 100%;
 }
 
-.porttitle {
-  font-family: "Oxanium", "Verdana", sans-serif;
-  font-size: 3.5em;
-  color: rgb(0, 182, 142);
-  position: absolute;
-  top: 40px;
-  left: 80px;
-  z-index: 99;
-  overflow: hidden;
-}
-
 .title {
   background: rgb(0, 182, 142);
   color: white;
@@ -61,7 +50,7 @@ nav {
   min-width: 300px;
   max-width: 500px;
   font-family: "Varela Round", "Verdana", sans-serif;
-  margin-left: 700px;
+  margin-left: 10px;
 }
 
 .mainintro {
@@ -80,8 +69,10 @@ nav {
 }
 
 .gallcontainer {
-  max-width: 1000px;
-  padding: 10px 100px 200px 100px;
+  display: grid;
+  grid-row-gap: 50px;
+  max-width: 800px;
+  padding: 10px 100px 10px 100px;
   font-family: "Oxanium", "Verdana", sans-serif;
   alignment: center;
   margin: auto;
@@ -99,10 +90,19 @@ nav {
   margin: auto;
 }
 
+.porttitle {
+  font-family: "Oxanium", "Verdana", sans-serif;
+  font-size: 3.5em;
+  color: rgb(41, 130, 189);
+  top: 10px;
+  z-index: 99;
+  overflow: hidden;
+}
+
 img.portimg {
   position: absolute;
   top: 20px;
-  left: 180px;
+  left: 1000px;
   z-index: 0;
   overflow: hidden;
 }
@@ -110,7 +110,7 @@ img.portimg {
 img.skullygirl {
   position: absolute;
   top: 20px;
-  left: 10px;
+  left: 200px;
   z-index: 2;
   overflow: hidden;
 }
@@ -171,7 +171,7 @@ button {
   grid-row: 2;
 }
 
-/* Three-up content columns -- do not edit these */
+/* Three-up content columns for main etc -- do not edit these */
 .threeup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -242,3 +242,47 @@ button {
     Font-Size:       .5em;
     Opacity:         .8;
   }
+
+@media only screen and (max-width: 800px) {
+.container {
+  max-width: 500px;
+  padding: 10px;
+  font-family: "Oxanium", "Verdana", sans-serif;
+  alignment: center;
+  margin: auto;
+}
+
+
+.threeve {
+  min-width: 300px;
+  max-width: 500px;
+  font-family: "Varela Round", "Verdana", sans-serif;
+  margin: auto;
+}
+
+.gallcontainer {
+  max-width: 450px;
+  padding: 10px 100px 200px 100px;
+  font-family: "Oxanium", "Verdana", sans-serif;
+  alignment: center;
+  margin: auto;
+}
+
+img.skullygirl {
+  position: absolute;
+  width: 150px;
+  top: 10px;
+  left: 5px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+img.portimg {
+  position: fixed;
+  top: 20px;
+  left: 1000px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+}
