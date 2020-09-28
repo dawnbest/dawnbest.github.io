@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>PHLEBO | Dawn Best | Design + Development</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxanium|Varela+Round&display=swap" rel="stylesheet">
+<!-- JQuery script MUST be in head DO NOT MOVE -->
+  <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<!-- Main Content -->
+<body>
+<main>
+
+  <div class="container">
+<div class="intro">
+    <div class="porttitle">Age of the Four Clans</div>
+    <!-- Gauges -->
+<div class="wrapper">
+    <div class="one"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="40"></div><p>Custom Engine</p></div>
+    <div class="two"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="30"></div><p>C#/JavaScript</p></div>
+    <div class="three"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="30"></div><p>Network Components</p></div>
+    <div class="five"><p>Age of the Four Clans is a 2D multiplayer online game for Windows featuring a prehistoric setting.</p>
+<p>A4C is a networked game that hooks up to a Linux server. Its local components and the engine it runs on were initially created in C# but have been reworked with JavaScript at the core.</p>
+</div>
+</div>
+    </div>
+    <h1>Objectives</h1>
+    <iframe width="560" height="315" src="https://www.indiedb.com/media/iframe/1831971" frameborder="0" allowfullscreen></iframe><br><a href="https://www.indiedb.com/videos/2d-dinosaur-mmo-age-of-the-four-clans-promo">2D Dinosaur MMO Age of the Four Clans Promo - Indie DB</a>
+    <p><b>Design and Development:</b> Initially an experiment in ways to get a group of friends together, online, Age of the Four Clans started as a small world on a Windows server. When it became clear that more people wanted to try the game, a new engine called Intersect was selected for the task, and work began on fleshing out the story and creating a better look and feel for the game. At peak, A4C enjoyed as many as one hundred players online, requiring dedicated hosting and a team of Game Masters to keep the peace and perform hotfixes.</p>
+    <p>The game has gone through several changes through the years, initially developed on a browser-based JavaScript platform on a Windows machine, it was migrated to several different in-between iterations before landing on the Intersect engine. Its servers have also moved several times, from dedicated Windows machines owned by the developer to their current setup on a commercial-grade Linux (Ubuntu terminal) host. While not as popular as it once was, A4C is still accepting new players looking for a fun "grinder" game!</p>
+<p><button type="button" onclick="window.location.href = 'https://evolvgames.itch.io/age-of-the-four-clans';">See this App in Action!</button></p>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>&nbsp;|&nbsp;
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+  </main>
+  <!-- Polyfill -->
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+  <!-- Scripts GSAP and the page in general will use -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="main.js"></script>
+<script src="./GaugeMeter.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
+</script>
+</body>
+</html>
