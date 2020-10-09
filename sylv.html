@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>SYLVANNA WEBSITE | Dawn Best | Design + Development</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxanium|Varela+Round&display=swap" rel="stylesheet">
+<!-- JQuery script MUST be in head DO NOT MOVE -->
+  <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<!-- Main Content -->
+<body>
+<main>
+
+  <div class="container">
+<div class="intro">
+    <div class="porttitle">Sylvanna Website</div>
+    <!-- Gauges -->
+<div class="wrapper">
+    <div class="one"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="70"></div><p>Wordpress CMS</p></div>
+    <div class="two"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="30"></div><p>HTML</p></div>
+    <div class="three"></div>
+    <div class="five"><p>This website was created to showcase the webcomic, Sylvanna. It's a basic CMS site running Wordpress with a few HTML add-ons.</p>
+</div>
+</div>
+    </div>
+    <h1>Objectives</h1>
+    <aside>
+    <img src="img/syldemo.png" alt="Application Snapshot">
+    </aside>
+    <p><b>Overview:</b> A CMS website for the Sylvanna webcomic, featuring art, stories, and the comic itself. This site was created in Wordpress and uses various Wordpress plugins for its multiple galleries. Some custom HTML was also added to sidebars and other locations, for easier navigation.</p>
+<p><button type="button" onclick="window.location.href = 'http://sylvanna.net/sylvanna/';">See this Site in Action!</button></p>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>&nbsp;|&nbsp;
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+  </main>
+  <!-- Polyfill -->
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+  <!-- Scripts GSAP and the page in general will use -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="main.js"></script>
+<script src="./GaugeMeter.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
+</script>
+</body>
+</html>
