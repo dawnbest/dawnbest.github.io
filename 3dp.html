@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>LANDING PAGE | Dawn Best | Design + Development</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxanium|Varela+Round&display=swap" rel="stylesheet">
+<!-- JQuery script MUST be in head DO NOT MOVE -->
+  <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<!-- Main Content -->
+<body>
+<main>
+
+  <div class="container">
+<div class="intro">
+    <div class="porttitle">Sass Landing Page</div>
+    <!-- Gauges -->
+<div class="wrapper">
+    <div class="one"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="80"></div><p>SCSS</p></div>
+    <div class="two"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="20"></div><p>HTML</p></div>
+    <div class="three"></div>
+    <div class="five"><p>This landing page was an experiment in Sass (SCSS) following a tutorial that detailed how to create webpages that were responsive to multiple displays and devices.</p>
+</div>
+</div>
+    </div>
+    <h1>Objectives</h1>
+    <aside>
+    <img src="img/3ddemo.png" alt="Application Snapshot">
+    </aside>
+    <p><b>Overview:</b> This project was created to provide a digital "business card" of sorts for people who are looking for small-scale 3D printing services in our area. This was a small experiment with streamlining the responsive site development process in Sass. The website layout changes when its window is either manually resized or shown on a smaller screen, such as a phone or tablet.</p>
+<p><button type="button" onclick="window.location.href = 'https://dawnbest.github.io/3dprint/';">See this Site in Action!</button></p>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>&nbsp;|&nbsp;
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+  </main>
+  <!-- Polyfill -->
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+  <!-- Scripts GSAP and the page in general will use -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="main.js"></script>
+<script src="./GaugeMeter.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
+</script>
+</body>
+</html>

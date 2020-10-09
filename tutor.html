@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>PHOTOSHOP TUTORIAL | Dawn Best | Design + Development</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxanium|Varela+Round&display=swap" rel="stylesheet">
+<!-- JQuery script MUST be in head DO NOT MOVE -->
+  <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<!-- Main Content -->
+<body>
+<main>
+
+  <div class="container">
+<div class="intro">
+    <div class="porttitle">Photoshop Tutorial</div>
+    <!-- Gauges -->
+<div class="wrapper">
+    <div class="one"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="80"></div><p>Adobe Photoshop</p></div>
+    <div class="two"><div class="GaugeMeter" id="GaugeMeter_1" data-percent="20"></div><p>Adobe Premiere</p></div>
+    <div class="three"><iframe width="560" height="315" src="https://www.youtube.com/embed/VKgITc0fR9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="five"><p>In this video I show viewers my process for coloring scanned line art in Photoshop -- one of my most popular requests as a digital artist. The video was captured in OBS Studio and edited in Adobe Premiere.</p>
+
+</div>
+</div>
+    </div>
+    
+  <nav>
+    <a href="index.html">Home</a>&nbsp;|&nbsp;
+    <a href="portfolioart.html">Portfolio</a>
+  </nav>
+  </main>
+  <!-- Polyfill -->
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
+  <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.3/gsap.min.js"></script>
+  <!-- Scripts GSAP and the page in general will use -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="main.js"></script>
+<script src="./GaugeMeter.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".GaugeMeter").gaugeMeter();
+  });
+</script>
+</body>
+</html>
